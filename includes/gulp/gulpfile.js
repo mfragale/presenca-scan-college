@@ -34,7 +34,7 @@ function buildCss() {
 
 
 function minify_functions_js() {
-    return src('../js/functions.js', { allowEmpty: true })
+    return src('../js/presenca-scan-college-functions.js', { allowEmpty: true })
         .pipe(minify({ noSource: true }))
         .pipe(dest('../js/dist'))
 }

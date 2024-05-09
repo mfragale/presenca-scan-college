@@ -30,10 +30,14 @@ error_log('Presença Scan do College WordPress plugin');
 
 
 
+/***************
+ * includes
+ ***************/
 
-// function load_me_on_header()
-// {
-//     echo "<h1>Presença Scan do College is live, baby!</h1>";
-// }
-
-// add_action('wp_head', 'load_me_on_header');
+//locaisdanova
+include_once dirname(__FILE__) . '/includes/register-shortcodes.php';
+include_once dirname(__FILE__) . '/includes/register-js.php';
+include_once dirname(__FILE__) . '/includes/register-css.php';
+include_once dirname(__FILE__) . '/includes/shortcodes.php';
+include_once dirname(__FILE__) . '/includes/functions.php';
+include_once dirname(__FILE__) . '/includes/add-actions.php';
